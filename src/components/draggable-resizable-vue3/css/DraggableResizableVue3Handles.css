@@ -1,0 +1,65 @@
+.drv-handle {
+  box-sizing: border-box;
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+}
+
+.drv-handle-tl {
+  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  cursor: nw-resize;
+}
+.drv-handle-tm {
+  transform: translate(0, -50%);
+  left: 5px;
+  width: calc(100% - 10px);
+  top: 0;
+  cursor: n-resize;
+}
+
+.drv-handle-tr {
+  transform: translate(50%, -50%);
+  top: 0;
+  right: 0;
+  cursor: ne-resize;
+}
+
+.drv-handle-ml {
+  transform: translate(-50%, 0);
+  top: 5px;
+  height: calc(100% - 10px);
+  left: 0;
+  cursor: w-resize;
+}
+
+.drv-handle-bl {
+  transform: translate(-50%, 50%);
+  bottom: 0;
+  left: 0;
+  cursor: sw-resize;
+}
+
+.drv-handle-bm {
+  transform: translate(0, 50%);
+  left: 5px;
+  width: calc(100% - 10px);
+  bottom: 0;
+  cursor: s-resize;
+}
+
+.drv-handle-br {
+  transform: translate(50%, 50%);
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+
+.drv-handle-mr {
+  transform: translate(50%, 0);
+  top: 5px;
+  height: calc(100% - 10px);
+  right: 0;
+  cursor: e-resize;
+}
